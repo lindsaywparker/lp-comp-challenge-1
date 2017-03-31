@@ -1,55 +1,77 @@
+/* playing with colors */
+/*.header, .blog4, button         {background-color: #2BBD78;}
+.profile1                         {background-color: #FF9F00;}
+.experience2, .contact6           {background-color: #1086C0;}
+.education3                       {background-color: #D14C3A;}
+.social5, .portfolio7             {background-color: #FA690D;}*/
+
+/* playing with colors */
+.header, .blog4, button         {background-color: #0299A3;}
+.profile1                       {background-color: #380032;}
+.experience2, .contact6         {background-color: #0F0A0F;}
+.education3                     {background-color: #D62672;}
+.social5, .portfolio7           {background-color: #82035B;}
+
+
+
+
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Fira Sans Condensed', Arial, sans-serif;
-  margin: 0;
   display: inline-flex;
+  margin: 0;
+  font-family: 'Fira Sans Condensed', Arial, sans-serif;
 }
 
-/* playing with colors */
-#header, #blog4         {background-color: #2BBD78;}
-#profile1               {background-color: #FF9F00;}
-#experience2, #contact6 {background-color: #1086C0;}
-#education3             {background-color: #D14C3A;}
-#social5, #portfolio7   {background-color: #FA690D;}
 
 h1, div, button {
   color: #FFF;
 }
-  
+
+/*this holds the menu of links and the image*/
 .container {
+  display: flex;
+  flex-wrap: wrap;
+}  
+
+/*this holds all of the links*/
+.menu {
   display: flex;
   flex-wrap: wrap;
   width: 60%;
   height: 100vh;
 }
 
-#header {
-  display: block;
-}
-
-button {
-  border: 2px solid #FFF;
-  background-color: #2BBD78;
-}
-
-div {
+.link {
   padding: 30px;
-  width: 30%;
+  width: 33.3333%;
   height: 33.3333%;
   align-items: center;
   justify-content: center;
 }
 
-#header {
-  width: 60%;
+.header {
+  width: 66.6666%;
 }
 
-#image {
+/*this holds just the two buttons in the header*/
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  border: 2px solid #FFF;
+}
+
+.image {
   width: 40%;
   height: 100vh;
-  justify-content: center;
-  background: url('Illuminated.jpg') no-repeat center center fixed;
+  background-image: url('Illuminated.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
