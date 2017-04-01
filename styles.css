@@ -41,6 +41,10 @@ p {
   margin-bottom: 3px;
 }
 
+.link p {
+  margin-top: 6px;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -53,23 +57,26 @@ p {
   height: 100vh;
 }
 
-.link {
+.content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 3%;
   width: 33.3333%;
-  height: 33.3333%;
+  height: 33.3333%;}
+  
+  .header {
+    width: 66.6666%;
+    align-items: flex-start;
+  }
+
+.link {
+  transition: all 300ms ease;
 }
 
-.link p {
-  margin-top: 6px;
-}
-
-.header {
-  width: 66.6666%;
-  align-items: flex-start;
+.link:hover {
+  background-color: rgba(128, 128, 128, 0.5);
 }
 
 button {
@@ -80,6 +87,11 @@ button {
   border: 2px solid #FFF;
   font-size: 16px;
   font-family: 'Fira Sans Condensed', Arial, sans-serif;
+  transition: all 300ms ease;
+}
+
+button:hover {
+  background-color: rgba(128, 128, 128, 0.9);
 }
 
 button img {
@@ -141,7 +153,9 @@ button img {
   background-image: url('images/circle.png');
   background-size: cover;
   background-repeat: no-repeat;
-  opacity: 0.3;}
+  opacity: 0.3;
+}
+
 .circle:hover {
   opacity: 0.5;
 }
@@ -161,7 +175,9 @@ button img {
 .arrows img {
   width: 42px;
   height: 42px;
-  opacity: 0.3;}
+  opacity: 0.3;
+}
+
 .arrows img:hover {
   opacity: 0.5;
 }
@@ -191,14 +207,10 @@ button img {
     width: 50%;
   }
   
-  .link {
+  .content {
     flex-direction: row;
     width: 100%;
     height: initial;
-  }
-  
-  .link p {
-    margin-left: 8px;
   }
   
   .header {
@@ -206,8 +218,8 @@ button img {
     height: auto;
   }
   
-  .header p {
-    margin-left: 0;
+  .link p {
+    margin-left: 8px;
   }
   
   .icon {
