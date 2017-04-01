@@ -5,39 +5,47 @@
 .education3                       {background-color: #D14C3A;}
 .social5, .portfolio7             {background-color: #FA690D;}*/
 
-
 .header, .blog4, button         {background-color: #0299A3;}
 .profile1                       {background-color: #380032;}
-.experience2, .contact6         {background-color: #0F0A0F;}
+.experience2, .contact6, body   {background-color: #0F0A0F;}
 .education3                     {background-color: #D62672;}
 .social5, .portfolio7           {background-color: #82035B;}
-
-
-
-
 
 * {
   box-sizing: border-box;
 }
 
+html {
+  display: flex;
+  justify-content: center;
+}
+
 body {
-  display: inline-flex;
   margin: 0;
   font-family: 'Fira Sans Condensed', Arial, sans-serif;
 }
-
 
 h1, div, button {
   color: #FFF;
 }
 
-/*this holds the menu of links and the image*/
+h1 {
+  margin-top: 4px;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+p {
+  font-weight: 300;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
 }  
 
-/*this holds all of the links*/
 .menu {
   display: flex;
   flex-wrap: wrap;
@@ -46,11 +54,37 @@ h1, div, button {
 }
 
 .link {
-  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
   width: 33.3333%;
   height: 33.3333%;
-  align-items: center;
-  justify-content: center;
+}
+
+.link p {
+  margin-top: 6px;
+}
+
+.header {
+  width: 66.6666%;
+  align-items: flex-start;
+}
+
+button {
+  width: 130px;
+  height: 50px;
+  margin-top: 16px;
+  margin-right: 12px;
+  border: 2px solid #FFF;
+  font-size: 16px;
+  font-family: 'Fira Sans Condensed', Arial, sans-serif;
+}
+
+button img {
+  width: 15px;
+  height: 15px;
 }
 
 .icon {
@@ -88,25 +122,11 @@ h1, div, button {
   background-image: url('images/portfolio.svg');
 }
 
-.header {
-  width: 66.6666%;
-}
-
-/*this holds just the two buttons in the header*/
-.buttons {
-  display: flex;
-  justify-content: space-between;
-}
-
-button {
-  border: 2px solid #FFF;
-}
-
 .image {
   width: 40%;
   height: 100vh;
-  padding: 6px;
-  background-image: url('images/Illuminated.jpg');
+  padding: 10px;
+  background-image: url('images/illuminated.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -126,18 +146,93 @@ button {
   opacity: 0.5;
 }
 
+.current-circle {
+  opacity: 0.9;
+}
+
 .arrows {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
 }
 
 .arrows img {
-  width: 46px;
-  height: 46px;
+  width: 42px;
+  height: 42px;
   opacity: 0.3;}
 .arrows img:hover {
   opacity: 0.5;
+}
+
+@media screen and (min-width: 1600px) {
+  .container {
+    max-width: 1600px;
+    max-height: 935px;
+  }
+}
+
+@media screen and (max-width: 805px) {
+  button {
+    width: 100px;
+    height: 38px;
+    margin-top: 16px;
+    margin-right: 12px;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .menu {
+    width: 50%;
+  }
+  
+  .image {
+    width: 50%;
+  }
+  
+  .link {
+    flex-direction: row;
+    width: 100%;
+    height: initial;
+  }
+  
+  .link p {
+    margin-left: 8px;
+  }
+  
+  .header {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .header p {
+    margin-left: 0;
+  }
+  
+  .icon {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    flex-direction: row;
+  }
+  
+  .menu {
+    width: 100%;
+    order: 1;
+  }
+  
+  .image {
+    width: 100%;
+    height: 200px;
+    background-image: url('images/illuminated-small.jpg');
+  }
+  
+  .arrows {
+    height: 130px;
+  }
 }
