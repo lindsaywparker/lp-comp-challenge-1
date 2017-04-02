@@ -36,9 +36,9 @@ h1 {
 }
 
 p {
-  font-weight: 300;
   margin-top: 3px;
   margin-bottom: 3px;
+  font-weight: 300;
 }
 
 .link p {
@@ -60,16 +60,17 @@ p {
 .content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 3%;
   width: 33.3333%;
-  height: 33.3333%;}
-  
-  .header {
-    width: 66.6666%;
-    align-items: flex-start;
-  }
+  height: 33.3333%;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  width: 66.6666%;
+  align-items: flex-start;
+}
 
 .link {
   transition: all 300ms ease;
@@ -82,11 +83,11 @@ p {
 button {
   width: 130px;
   height: 50px;
+  border: 2px solid #FFF;
   margin-top: 16px;
   margin-right: 12px;
-  border: 2px solid #FFF;
-  font-size: 16px;
   font-family: 'Fira Sans Condensed', Arial, sans-serif;
+  font-size: 16px;
   transition: all 300ms ease;
 }
 
@@ -102,8 +103,8 @@ button img {
 .icon {
   width: 50px;
   height: 50px;
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .icon-profile {
@@ -139,9 +140,9 @@ button img {
   height: 100vh;
   padding: 10px;
   background-image: url('images/illuminated.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .circle {
@@ -151,8 +152,8 @@ button img {
   height: 11px;
   margin: 12px 3px;
   background-image: url('images/circle.png');
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
   opacity: 0.3;
 }
 
@@ -166,10 +167,10 @@ button img {
 
 .arrows {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   width: 100%;
   height: 90vh;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .arrows img {
@@ -234,8 +235,8 @@ button img {
   }
   
   .menu {
-    width: 100%;
     order: 1;
+    width: 100%;
   }
   
   .image {
