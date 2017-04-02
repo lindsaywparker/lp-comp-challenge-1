@@ -6,7 +6,7 @@ This version of Static Comp 1 is achieved using four levels of nested divs with 
 3. The unit of links (a div called `.menu`) is then flexed to give us this great wrapped effect and also make responsiveness easier when the links stack.
 4. Finally, each individual link is flexed to allow for easy alignment and justification, as well as to change the layout of the icon and link text from row to column when the links stack.
 
-The image is from a Google search of "Today's Best Photographs," resulting in this great site from [The Guardian](https://www.theguardian.com/news/series/ten-best-photographs-of-the-day/2017/mar/10/all "The Guardian"). The color scheme is from Adobe Color, specifically the [Dark Flower color theme](https://color.adobe.com/Dark-Flower-color-theme-1391722/edit/?copy=true "Dark Flower color theme on Adobe Color").  Icons are from <http://www.flaticon.com/>.
+The image is from a Google search of "Today's Best Photographs," resulting in this great site from [The Guardian](https://www.theguardian.com/news/series/ten-best-photographs-of-the-day/2017/mar/10/all "The Guardian"). The color scheme is from Adobe Color, specifically the [Dark Flower color theme](https://color.adobe.com/Dark-Flower-color-theme-1391722/edit/?copy=true "Dark Flower color theme on Adobe Color").  Icons are from [Flaticon](http://www.flaticon.com/ "Flaticon").
 
 
 ## Images
